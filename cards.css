@@ -25,6 +25,7 @@
     border: 1px solid white;
     border-radius: 35px;
     background-image: linear-gradient(70deg, red , yellow);
+    border: none;
 }
 .up {
     display: flex;
