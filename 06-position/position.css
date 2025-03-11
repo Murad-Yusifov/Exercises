@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(80, 78, 78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 180px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    position: relative;
+
+}
+
+.userm {
+    top: -10px;
+    /* width: 300px;
+    height: 100px;
+    font-size: 300px;
+} */
+}
+
+.imgBox {
+    position: absolute;
+    top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+    border: 3px solid rgb(172, 82, 97);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.user {
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    height: 25px;
+    background-color: rgb(172, 82, 97);
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.followers {
+
+    font-size: 10px;
+}
+
+.github {
+    background-color: rgb(172, 82, 97);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.youtube {
+    background-color: rgb(172, 82, 97);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.twitter {
+    background-color: rgb(172, 82, 97);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.in {
+    background-color: rgb(172, 82, 97);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.in:hover {
+  background-color: pink;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 30px;
+}
+.name {
+    color: rgb(172, 82, 97) ;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.email {
+    padding-top: 10px;
+
+    font-size: 10px;
+    color: grey;
+}
+
+.developer {
+    padding-top: 10px;
+    font-size: 13px;
+    color: grey;
+}

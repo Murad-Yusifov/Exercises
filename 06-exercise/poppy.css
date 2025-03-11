@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://preview.colorlib.com/theme/petsitting/images/bg_1.jpg.webp");
+
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: x;
+    /* border: 1px solid black; */
+    
+}
+.fa-paw {
+    width: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.bout {
+    font-size: 5px;
+
+}
+.pet {
+    font-size: 10px;
+    font-weight: bold;
+}
+.pett {
+    display: flex;
+    align-items: center;
+
+    width: 30%;
+}
+.love {
+ font-size: 15px;
+ font-weight: bold;
+ color: rgb(255, 255, 255);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 10px;
+ 
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.btn {
+    background-color: transparent;
+    width: 60px;
+    height: 20px;
+}
+
+button {
+    background-color: #00BD56;
+    border: none;
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+    font-size: 5px;
+    font-weight: 900;
+    color: white;
+
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1.5px solid #00BD56;
+    color: #00BD56;
+    transition: .5s;
+
+}
+
+.walking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    
+
+
+}
+
+.dog-walking {
+    width: 25%;
+    height: 260px;
+    position: absolute;
+    background-color: #00BD56;
+    top: -40;
+   transition: .5s;
+   display: flex;
+  align-content: space-between;
+  justify-content: center;
+   flex-direction: column;
+   position: relative;
+   box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.2);;
+   
+
+}
+
+/* .dog-walking:hover {
+   background-color: #00BD56;
+   transition: .5s;
+} */
+
+.wolker {
+   font-size: bold;
+}
+
+.more {
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: #00BD56;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20;
+    right: 80;
+
+}
+
+
