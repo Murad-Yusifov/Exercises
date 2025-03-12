@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;    
+    box-sizing: border-box;
+}
+
+.container {
+   
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 45px;
+    border-bottom: 1px solid grey;
+}
+.middle {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+   
+
+}
+
+.fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid grey;
+
+    &:hover {
+        color: red;
+    }
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 20px;
+}
+.iphone {
+    width: 18%;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.imgBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+img {
+    width: 90%;
+}
+
+button {
+    width: 90%;
+    height: 35px;
+    border-radius: 8px;
+    border: 0;
+    background-color: purple;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.textBox {
+    padding-left: 10px;
+}
+.menu {
+    display: none;
+    cursor: pointer;
+ }
+
+@media screen and (min-width:301px) and (max-width:576px) {
+    .icons {
+        display: none;
+    }
+    
+    .middle {
+        display: none;
+    }
+     .menu {
+        display: flex;
+     }
+
+     .iphone {
+        width: 45%;
+     }
+
+}
+
+@media screen and (min-width:300px) and (max-width:350px) {
+    .iphone {
+        width: 60%;
+     }
+
+}
