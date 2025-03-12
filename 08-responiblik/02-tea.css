@@ -97,7 +97,7 @@ button {
 .icon1 {
     display: flex;
     justify-content: center;
-    
+
 }
 
 @media screen and (min-width: 300px) and (max-width: 576px) {
@@ -136,6 +136,19 @@ button {
         display: block;
         font-size: 20px;
 
+    }
+
+    .zero {
+        position: absolute;
+        top: -2;
+        right: 30;
+    }
+
+    .header {
+        margin: 0;
+    }
+    .icon {
+        width: 10%;
     }
 
 
