@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 30px;
+        background-color: white;
+
+        position: sticky;
+        top: 5;
+
+        width: 100%;
+        height: 70px;
+
+        .demo {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            transition: .5s;
+
+
+            .demo:hover {
+                color: #646464;
+                transition: .5s;
+            }
+
+            h3 {
+                color: #6679A6;
+                font-size: 30px;
+                font-weight: 100;
+            }
+        }
+
+        .blog {
+            font-size: 20px;
+            color: #646464;
+        }
+
+        .blog:hover {
+            color: #634C80;
+        }
+
+        .homeBar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+    }
+
+    .middle {
+        background-image: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg);
+        width: 100%;
+        height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        font-size: 60px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    .read {
+        width: 160px;
+        height: 60px;
+        border: none;
+        background-color: #745CF9 ;
+        transition: .5s;
+        cursor: pointer;
+
+    }
+
+    .read:hover  {
+        background-color: #745CF9;
+        transition: .5s;
+
+    }
+    .now {
+        width: 160px;
+        height: 60px;
+        background-color: transparent;
+        border: 3px solid #E8EBED;
+        color: #E8EBED;
+
+        cursor: pointer;
+        
+        margin-left: 10px
+
+    }
+
+    .now:hover {
+
+        background-color: #FFFFFF;
+    
+
+    }
+
+    }
+}
+
+    
+
+
+@media screen and (min-width:300px) and (max-width:700px) {
+
+    h2 {
+        text-align: center;
+    }
+
+    span {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .middle {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeBar {
+        display: none;
+    }
+
+    .blog {
+        display: none;
+    }
+    // h3 {
+    //     font-size: 20px;
+    // }
+    .demo {
+  width: 40%;
+    }
+
+    .btn {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    h3 {
+       width: 40%;
+    }
+}
+
+@media screen and (min-width:701) and (max-width:1100px) {
+    .homeBar {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .blog {
+        font-size: 10px;
+    }
+
+    .middle {
+        text-align: center;
+    }
+
+
+    
+
+}
+
+
+.imgbox {
+    width: 100px;
+    height: 50px;
+
+    img {
+        width: 100PX;
+        height: 100%;
+    }
+}
+
+.laptop {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100vh;
+
+
+    .imgbox {
+        width: 700px;
+        height: 450px;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+
+    .seo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 20px;
+    }
+
+    .side-text {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .purple {
+        background-color: purple;
+
+    }
+
+    .friend {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .purple {
+            width: 160px;
+            height: 50px;
+            border: none;
+            background-color: #745CF9 ;
+            transition: .5s;
+            cursor: pointer;
+    
+        }
+    
+        .purple:hover  {
+            background-color: #745CF9;
+            transition: .5s;
+    
+        }
+
+        .lorem {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .btn-purple {
+        }
+    }
+
+
