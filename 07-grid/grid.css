@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2f3f;
+}
+.container {
+    display: grid;
+    width: 800px;
+    height: 600px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    gap: 25px;
+    background-color: #1c1e29;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header {
+    grid-column: 1 / 4;
+    background: linear-gradient(to right, #7b5cff, #6241ea);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.sidebar {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    background: linear-gradient(to bottom, #34e89e, #0f3443);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.content-1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.content-2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.content-3 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.footer {
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    background: linear-gradient(to right, #7b5cff, #6241ea);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}

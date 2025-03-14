@@ -1,3 +1,4 @@
+/* Reset and Box-Sizing */
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,8 @@
   width: 100%;
   height: 100vh;
 }
-.wrapper .header {
+
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,40 +18,47 @@
   padding: 0 30px;
   background-color: white;
   position: sticky;
-  top: 5;
+  top: 5px; /* Fixed unit */
   width: 100%;
   height: 70px;
 }
-.wrapper .header .demo {
-  width: 30%;
+
+.demo {
+  width: 200px;
   display: flex;
   justify-content: center;
   transition: 0.5s;
 }
-.wrapper .header .demo .demo:hover {
+
+.demo:hover {
   color: #646464;
   transition: 0.5s;
 }
-.wrapper .header .demo h3 {
+
+.demo h3 {
   color: #6679A6;
   font-size: 30px;
   font-weight: 100;
 }
-.wrapper .header .blog {
+
+.blog {
   font-size: 20px;
   color: #646464;
 }
-.wrapper .header .blog:hover {
+
+.blog:hover {
   color: #634C80;
 }
-.wrapper .header .homeBar {
+
+.homeBar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 70%;
 }
-.wrapper .middle {
-  background-image: url(https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg);
+
+.middle {
+  background-image: url("https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg");
   width: 100%;
   height: 100vh;
   display: flex;
@@ -59,14 +68,20 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
-.wrapper .middle h2 {
+
+.middle h2 {
   font-size: 60px;
+  color: white;
 }
-.wrapper .middle span {
+
+.middle span {
   font-size: 18px;
+  color: white;
 }
-.wrapper .middle .read {
+
+.read {
   width: 160px;
   height: 60px;
   border: none;
@@ -74,48 +89,68 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.wrapper .middle .read:hover {
-  background-color: #745CF9;
-  transition: 0.5s;
+
+.read:hover {
+  background-color: #5a42d3;
 }
-.wrapper .middle .now {
+
+.now {
   width: 160px;
   height: 60px;
   background-color: transparent;
-  border: 3px solid #E8EBED;
+  border: 4px solid #ffffff;
   color: #E8EBED;
   cursor: pointer;
   margin-left: 10px;
-}
-.wrapper .middle .now:hover {
-  background-color: #FFFFFF;
+  transition: 0.4s;
 }
 
+.now:hover {
+  background-color: #FFFFFF;
+  color: black;
+  transition: 0.4s;
+}
+
+.search {
+  width: 0;
+  height: 40px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  transition: width 0.4s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: -50px;
+}
+
+.glass {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.searching:hover .search {
+  width: 200px;
+  opacity: 1;
+  top: 0;
+}
+
+/* Responsive Design */
 @media screen and (min-width: 300px) and (max-width: 700px) {
-  h2 {
+  .middle h2, .middle span {
     text-align: center;
-  }
-  span {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
   }
   .middle {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  .homeBar {
-    display: none;
+  .header {
+    flex-direction: column;
   }
-  .blog {
+  .homeBar, .blog {
     display: none;
   }
   .demo {
@@ -128,85 +163,126 @@
     justify-content: center;
     gap: 20px;
   }
-  h3 {
-    width: 40%;
-  }
 }
-@media screen and (min-width: 701) and (max-width: 1100px) {
+@media screen and (min-width: 701px) and (max-width: 1100px) {
   .homeBar {
     width: 90%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
   }
   .blog {
-    font-size: 10px;
-  }
-  .middle {
-    text-align: center;
+    font-size: 14px;
   }
 }
-.imgbox {
-  width: 100px;
-  height: 50px;
-}
-.imgbox img {
-  width: 100PX;
-  height: 100%;
-}
-
 .laptop {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 10px;
   height: 100vh;
 }
-.laptop .imgbox {
+
+.imgbox {
   width: 700px;
   height: 450px;
 }
-.laptop .imgbox img {
+
+.imgbox img {
   width: 100%;
   height: 100%;
 }
-.laptop .seo {
+
+.seo {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-content: space-between;
   gap: 20px;
 }
-.laptop .side-text {
+
+.friend {
+  width: 100%;
+}
+
+.side-text {
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.laptop .purple {
-  background-color: purple;
-}
-.laptop .friend {
-  font-size: 30px;
-  font-weight: bold;
-}
-.laptop .purple {
+
+.purple {
+  background-color: #745CF9;
   width: 160px;
   height: 50px;
   border: none;
-  background-color: #745CF9;
   transition: 0.5s;
   cursor: pointer;
+  color: white;
 }
-.laptop .purple:hover {
-  background-color: #745CF9;
-  transition: 0.5s;
+
+.purple:hover {
+  background-color: #5a42d3;
 }
-.laptop .lorem {
+
+.lorem {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 100%;
+  background-color: #F5F5F5;
+}
+.container3 .text-Box1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: space-between;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.container3 .text-Box1 .btn-action {
+  width: 200px;
+  height: 60px;
+  background-color: #745CF9;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.container3 .text-Box1 .btn-action:hover {
+  background-color: #4631b2;
+  transition: 0.4s;
+}
+.container3 .text-Box1 .leftSide-portfolio {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container3 .text-Box1 .right-side-img-portfolio {
+  width: 50%;
+  height: 100vh;
+  background-color: red;
+}
+.container3 .text-Box1 .right-side-img-portfolio .nemic {
+  height: 100px;
+  width: 10px;
+}
+
+.scaled {
+  width: 600px;
 }
