@@ -255,6 +255,60 @@
         .text-Box1 {
             width: 100%;
             height: 100%;
+<<<<<<< HEAD
+=======
+        }
+    
+    }
+
+    .seo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 20px;
+    }
+
+    .        {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .purple {
+        background-color: purple;
+
+    }
+
+    .friend {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .purple {
+            width: 160px;
+            height: 50px;
+            border: none;
+            background-color: #745CF9 ;
+            transition: .5s;
+            cursor: pointer;
+    
+        }
+    
+        .purple:hover  {
+            background-color: #745CF9;
+            transition: .5s;
+    
+        }
+
+        .lorem {
+            width: 100%;
+>>>>>>> af9a784 (commit)
             display: flex;
             align-content: space-between;
             gap: 20px;
