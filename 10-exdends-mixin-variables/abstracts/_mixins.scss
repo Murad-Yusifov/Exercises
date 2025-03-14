@@ -1,0 +1,6 @@
+@mixin box ($bg: #fefefe) {
+    width: 100px;
+    height: 100px;
+    background-color: $bg;
+    margin: 10px;
+}

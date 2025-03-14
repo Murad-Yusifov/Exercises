@@ -1,0 +1,71 @@
+box {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 25px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+.touch {
+  display: none;
+  position: relative;
+}
+
+.Services:hover .touch {
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 10%;
+  list-style: none;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 13px;
+}
+
+.support {
+  display: none;
+  position: relative;
+}
+
+.more:hover .support {
+  position: absolute;
+  left: 190;
+  height: 100px;
+  width: 150px;
+  list-style: none;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+}
